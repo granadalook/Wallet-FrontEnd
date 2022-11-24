@@ -4,7 +4,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Registro} from './registro';
 import {Pagos} from './pagos';
 import {Prestamos} from './prestamos';
-import {NavigationContainer} from '@react-navigation/native';
 import {Login} from './login';
 import {Home} from './home';
 
@@ -23,9 +22,5 @@ function MyTabs() {
 }
 
 export const NavBar = () => {
-  return (
-    <NavigationContainer>
-      <MyTabs />
-    </NavigationContainer>
-  );
+  return <MyTabs />;
 };

@@ -1,9 +1,14 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-
-import {NavBar} from './src/app/screens/navBar';
+import {NavigationContainer} from '@react-navigation/native';
+import {DrawerNavigation} from './src/app/screens/draweNavigation';
 
 const App = () => {
-  return <NavBar />;
+  return (
+    <NavigationContainer>
+      <DrawerNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;
